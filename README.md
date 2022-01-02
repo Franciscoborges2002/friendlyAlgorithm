@@ -5,4 +5,4 @@ So what is friendlyAlgorithm? As the name goes friendlyAlgorithm is a c program 
 ## :star: Features
 
 ## 🛣️ Roadmap
-- [] Make the base project(v1.0)
+- [ ] Make the base project(v1.0)
