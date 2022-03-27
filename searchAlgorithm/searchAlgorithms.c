@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "../animation/SearchAlgorithms/linearSearchAnimation.c"
+
 /*Seach Algorithms menu 
 /*Nothing to pass to the function
 /*Nothing to return to the previous function
@@ -37,6 +40,7 @@ void linearSearch(){
     }
 
     if(exa == 0){
+        return;
     }else{
         printf("Here's our Array: [10 15 20 25 30 35 40]");
         printf("                   0   1   2   3   4   5   6");
