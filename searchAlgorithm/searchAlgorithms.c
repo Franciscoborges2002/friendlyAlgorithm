@@ -8,8 +8,9 @@
 void searchAlgorithmsMenu(){
     int res=0;
 
-    printf('So you want to learn about search Algorithms.\n Here\'s a list of some of them:');
-    printf('1.Linear Search;');
+    printf('So you want to learn about search Algorithms.\n Here\'s a list of some of them:\n');
+    printf('1.Linear Search;\n');
+    printf('2.Binary Search;\n');
 
     scanf("%d", &res);
 
@@ -20,6 +21,8 @@ void searchAlgorithmsMenu(){
 
     if(res == 1){
         linearSearch();
+    }else if(res == 2){
+        binarySearch();
     }
 }
 
@@ -51,5 +54,26 @@ void linearSearch(){
         printf("3.Check if the number is in Array[2] -> It is not.");
         printf("4.Check if the number is in Array[3] -> It is in index 3.");
         printf("5.Return the index 3.");
+    }
+}
+
+void binarySearch(){
+    int exa = -1;
+
+    printf("So what exactly is the binary search?\n");
+    printf("To proprely use this method you need to have the array ordered.\n");
+    printf("This method we are going to take the index that is in the middle of the array.\nThen we need to check if the value in this index is greater of smaller than the value that we want.\nIf is greater we pick the second half of the interval that we were. if it was smaller we take the other half.\nAnd we repeat the process untill we get the value and return the index.\nIf the value that we are trying to find isn't in the array we just need to return -1.");
+    printf("Do you want an example?(Yes: 1, No:0)");
+    scanf("%d", &exa);
+
+    while(exa < 0 || exa > 1){
+        printf("Didn't understood. Do you want an example?(Yes:1, No:0)");
+        scanf("%d", &exa);
+    }
+
+    if(exa == 0){
+        return;
+    }else{
+        /*Make the steps;*/
     }
 }

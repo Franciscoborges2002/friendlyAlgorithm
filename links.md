@@ -3,3 +3,4 @@
 ## Search Algorithms:
 
     - [Linear Search](https://www.geeksforgeeks.org/linear-search/)
+    - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
