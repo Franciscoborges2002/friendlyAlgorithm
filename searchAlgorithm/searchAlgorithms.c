@@ -1,30 +1,5 @@
 #include <stdio.h>
-#include "../animation/SearchAlgorithms/linearSearchAnimation.c"
-
-/*Seach Algorithms menu 
-/*Nothing to pass to the function
-/*Nothing to return to the previous function
-*/
-void searchAlgorithmsMenu(){
-    int res=0;
-
-    printf('So you want to learn about search Algorithms.\n Here\'s a list of some of them:\n');
-    printf('1.Linear Search;\n');
-    printf('2.Binary Search;\n');
-
-    scanf("%d", &res);
-
-    while(res<0 || res>3){
-        printf('Don\'t got that option. Try again; ');
-        scanf("%d", &res);
-    }
-
-    if(res == 1){
-        linearSearch();
-    }else if(res == 2){
-        binarySearch();
-    }
-}
+#include "../animation/SearchAlgorithms/linearSearchAnimation.h"
 
 /*Linear Search
 /*Nothing to pass to the function
@@ -76,4 +51,47 @@ void binarySearch(){
     }else{
         /*Make the steps;*/
     }
+}
+
+void searchAlgorithmsMenuOptions(){
+	printf("So you want to learn about search Algorithms.\nHere\'s a list of some of them:");
+    printf("\n1.Linear Search;");
+    printf("\n2.Binary Search;");
+	printf("\n0.Return;");
+	printf("\n->");
+}
+
+/*Seach Algorithms menu 
+/*Nothing to pass to the function
+/*Nothing to return to the previous function
+*/
+void searchAlgorithmsMenu(){
+    int res=0;
+    clean();
+    searchAlgorithmsMenuOptions();
+    
+    scanf("%d", &res);
+
+    while(res<0 || res>3){
+        printf("Don\'t got that option. Try again; ");
+        scanf("%d", &res);
+    }
+
+	switch(res){
+    	case 0:
+    		return;
+    	break;
+        case 1://Search Algorithms
+			linearSearch();
+        break;
+        case 2://Search Algorithms
+			binarySearch();
+        break;
+    }
+/*
+    if(res == 1){
+        linearSearch();
+    }else if(res == 2){
+        binarySearch();
+    }*/
 }

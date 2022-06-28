@@ -1,40 +1,5 @@
-#include "../../generalFunctions.c"
-
+#include <stdio.h>
 /*Function to make the animation to the linearSearch example*/
-
-//Main function
-void linearSearchAnimation(){
-
-    //First interaction
-    printHeader();
-    printFirstStep();
-    mediumWait();
-    clean();
-
-    //Second interaction
-    printHeader();
-    printSecondStep();
-    mediumWait();
-    clean();
-
-    //Third interaction
-    printHeader();
-    printThirdStep();
-    mediumWait();
-    clean();
-
-    //Fourth interaction
-    printHeader();
-    printFourthStep();
-    mediumWait();
-    clean();
-
-    //Fifth interaction
-    printHeader();
-    printFifthStep();
-    mediumWait();
-    clean();
-}
 
 //Funtion to print header
 void printHeader(){
@@ -83,10 +48,44 @@ void printFourthStep(){
 }
 
 //Function to print the fifth step
-void printFidthStep(){
+void printFifthStep(){
     printf("Array: [10 15 20 25 30 35 40]\n");
     printf("        /  /  /  /  ^\n");
     printf("                    |\n");
     printf("                    30 == 30\n");
     printf("Return to the index: 4");
+}
+
+//Main function
+void linearSearchAnimation(){
+
+    //First interaction
+    printHeader();
+    printFirstStep();
+    mediumWait();
+    clean();
+
+    //Second interaction
+    printHeader();
+    printSecondStep();
+    mediumWait();
+    clean();
+
+    //Third interaction
+    printHeader();
+    printThirdStep();
+    mediumWait();
+    clean();
+
+    //Fourth interaction
+    printHeader();
+    printFourthStep();
+    mediumWait();
+    clean();
+
+    //Fifth interaction
+    printHeader();
+    printFifthStep();
+    mediumWait();
+    clean();
 }
